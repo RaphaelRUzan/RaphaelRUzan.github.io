@@ -356,23 +356,17 @@ footer p + p {
 }
 
 
-@-webkit-keyframes glow {
-    to {
-         border-color: #69c800;
-    -webkit-box-shadow: 0 0 5px #69c800;
-       -moz-box-shadow: 0 0 5px #69c800;
-            box-shadow: 0 0 5px #69c800;
-    }
-}
-
-.myGlower {
+#myGlower {
     background-color: #ccc;
     border: 1px solid transparent;
-    -webkit-animation: glow 1.0s infinite alternate;
-     -webkit-transition: border 1.0s linear, box-shadow 1.0s linear;
-       -moz-transition: border 1.0s linear, box-shadow 1.0s linear;
-            transition: border 1.0s linear, box-shadow 1.0s linear;
-    width: 100px;
-    height: 100px;
-    margin: 50px;
+    -webkit-transition: border 0.1s linear, box-shadow 0.1s linear;
+       -moz-transition: border 0.1s linear, box-shadow 0.1s linear;
+            transition: border 0.1s linear, box-shadow 0.1s linear;
+}
+
+#myGlower.active {
+    border-color: blue;
+    -webkit-box-shadow: 0 0 5px blue;
+       -moz-box-shadow: 0 0 5px blue;
+            box-shadow: 0 0 5px blue;
 }
